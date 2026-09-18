@@ -1,4 +1,4 @@
-# AUFE 课题组科研入门
+# AUFE课题组科研入门
 
 <p align="center">
   <img alt="license" src="https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg" />
@@ -13,10 +13,14 @@
 </p>
 
 <p align="center">
-  <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/"><b>在线学习站点</b></a> ·
+  <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/"><b>在线学习站点（正式）</b></a> ·
+  <a href="https://enco1128.github.io/Research-group-study-materials/"><b>旧地址自动跳转</b></a> ·
   <a href="https://github.com/enco1128/AUFE-Research-group-study-materials"><b>GitHub 仓库</b></a> ·
   <a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/latex/main.tex"><b>Overleaf 手册源码</b></a>
 </p>
+
+> **正式站点：** https://enco1128.github.io/AUFE-Research-group-study-materials/  
+> 旧路径 `.../Research-group-study-materials/` 仅作跳转兼容，请收藏正式地址。
 
 ---
 

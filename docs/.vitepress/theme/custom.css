@@ -1,13 +1,73 @@
 /**
+ * AUFE课题组科研入门 · 主题样式
+ * 中文：华文中宋 / STZhongsong
  * 英文：Times New Roman
- * 中文：华文中宋（STZhongsong）
- * 浏览器对拉丁字符优先匹配 Times New Roman，CJK 回退到华文中宋。
+ * 视觉：学术纸感 + 墨青主色（避免通用紫渐变）
  */
+
 :root {
+  --aufe-ink: #1a3a4a;
+  --aufe-ink-soft: #2c5364;
+  --aufe-paper: #f7f4ef;
+  --aufe-paper-deep: #efe8dc;
+  --aufe-accent: #8b6914;
+  --aufe-accent-soft: #c4a574;
+  --aufe-line: rgba(26, 58, 74, 0.12);
+  --aufe-shadow: 0 10px 30px rgba(26, 58, 74, 0.08);
+
+  --vp-c-brand-1: #1a3a4a;
+  --vp-c-brand-2: #2c5364;
+  --vp-c-brand-3: #3d6a7d;
+  --vp-c-brand-soft: rgba(26, 58, 74, 0.08);
+
+  --vp-c-bg: var(--aufe-paper);
+  --vp-c-bg-alt: var(--aufe-paper-deep);
+  --vp-c-bg-elv: #fffcf7;
+  --vp-c-divider: var(--aufe-line);
+  --vp-c-gutter: var(--aufe-paper-deep);
+
+  --vp-c-text-1: #1c2428;
+  --vp-c-text-2: #44555c;
+  --vp-c-text-3: #6b7c84;
+
   --vp-font-family-base: 'Times New Roman', Times, '华文中宋', STZhongsong,
-    '华文中宋', 'Songti SC', SimSun, serif;
-  --vp-font-family-mono: 'Times New Roman', Times, '华文中宋', STZhongsong,
-    ui-monospace, monospace;
+    'Songti SC', SimSun, serif;
+  --vp-font-family-mono: Consolas, 'Courier New', '华文中宋', STZhongsong, monospace;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    var(--aufe-ink) 30%,
+    var(--aufe-accent) 95%
+  );
+  --vp-home-hero-image-background-image: radial-gradient(
+    closest-side,
+    rgba(196, 165, 116, 0.25),
+    transparent
+  );
+}
+
+.dark {
+  --aufe-ink: #d7e6ee;
+  --aufe-ink-soft: #9bb8c6;
+  --aufe-paper: #121a1f;
+  --aufe-paper-deep: #0d1418;
+  --aufe-accent: #d4b483;
+  --aufe-accent-soft: #a88955;
+  --aufe-line: rgba(215, 230, 238, 0.12);
+  --aufe-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --vp-c-brand-1: #d4b483;
+  --vp-c-brand-2: #e0c49a;
+  --vp-c-brand-3: #c4a574;
+  --vp-c-brand-soft: rgba(212, 180, 131, 0.12);
+
+  --vp-c-bg: #121a1f;
+  --vp-c-bg-alt: #0d1418;
+  --vp-c-bg-elv: #182229;
+  --vp-c-text-1: #eef3f5;
+  --vp-c-text-2: #b7c6cd;
+  --vp-c-text-3: #8799a2;
 }
 
 html,
@@ -20,29 +80,312 @@ body,
 .VPHero,
 .VPFeature,
 .VPLocalNav,
-.VPDocAsideOutline {
-  font-family: var(--vp-font-family-base) !important;
-}
-
-.vp-doc h1,
-.vp-doc h2,
-.vp-doc h3,
-.vp-doc h4,
-.vp-doc h5,
-.vp-doc h6,
-.VPHero .name,
-.VPHero .text,
-.VPHero .tagline,
-.VPFeature .title,
-.VPFeature .details,
+.VPDocAsideOutline,
 .VPNavBarTitle,
 .VPSidebarItem .text {
   font-family: var(--vp-font-family-base) !important;
 }
 
-/* 代码块仍尽量等宽，但中文注释同样走中宋 */
+.vp-doc {
+  line-height: 1.85;
+  font-size: 16.5px;
+  letter-spacing: 0.01em;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--aufe-ink);
+}
+
+.vp-doc h2 {
+  border-top: none;
+  margin-top: 2.2rem;
+  padding-top: 0.4rem;
+  border-bottom: 1px solid var(--aufe-line);
+}
+
+.vp-doc a {
+  font-weight: 600;
+  text-underline-offset: 0.18em;
+}
+
+.vp-doc blockquote {
+  border-left-color: var(--aufe-accent-soft);
+  background: color-mix(in srgb, var(--aufe-accent-soft) 12%, transparent);
+  border-radius: 0 8px 8px 0;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: color-mix(in srgb, var(--aufe-ink) 3%, transparent);
+}
+
 .vp-doc code,
 .vp-doc pre,
 .vp-code {
-  font-family: Consolas, 'Courier New', '华文中宋', STZhongsong, monospace !important;
+  font-family: var(--vp-font-family-mono) !important;
+}
+
+/* ---------- Home hero ---------- */
+.VPHome {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHome::before {
+  content: '';
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 55vh;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(196, 165, 116, 0.18), transparent 55%),
+    radial-gradient(ellipse at 80% 10%, rgba(26, 58, 74, 0.1), transparent 50%);
+  pointer-events: none;
+  animation: aufe-glow 12s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.VPHome > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes aufe-glow {
+  from { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
+  to { transform: translate3d(2%, 3%, 0) scale(1.05); opacity: 1; }
+}
+
+.VPHero {
+  padding-top: 72px !important;
+  padding-bottom: 36px !important;
+}
+
+.VPHero .name {
+  font-size: clamp(2rem, 5vw, 3.2rem) !important;
+  line-height: 1.25 !important;
+  animation: aufe-rise 0.8s ease both;
+}
+
+.VPHero .text {
+  font-size: clamp(1.2rem, 2.6vw, 1.8rem) !important;
+  color: var(--aufe-ink-soft) !important;
+  animation: aufe-rise 0.9s ease 0.08s both;
+}
+
+.VPHero .tagline {
+  max-width: 42rem;
+  animation: aufe-rise 1s ease 0.14s both;
+}
+
+.VPHero .actions {
+  animation: aufe-rise 1.05s ease 0.2s both;
+}
+
+.VPHero .VPButton.brand {
+  box-shadow: 0 8px 20px rgba(26, 58, 74, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.VPHero .VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(26, 58, 74, 0.28);
+}
+
+.VPHero .VPButton.alt {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.VPHero .VPButton.alt:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes aufe-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Feature cards ---------- */
+.VPFeatures {
+  padding-top: 12px !important;
+}
+
+.VPFeature {
+  border: 1px solid var(--aufe-line) !important;
+  background: color-mix(in srgb, var(--vp-c-bg-elv) 92%, var(--aufe-accent-soft)) !important;
+  box-shadow: var(--aufe-shadow);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  animation: aufe-rise 0.7s ease both;
+}
+
+.VPFeatures .item:nth-child(1) .VPFeature { animation-delay: 0.05s; }
+.VPFeatures .item:nth-child(2) .VPFeature { animation-delay: 0.12s; }
+.VPFeatures .item:nth-child(3) .VPFeature { animation-delay: 0.19s; }
+.VPFeatures .item:nth-child(4) .VPFeature { animation-delay: 0.26s; }
+.VPFeatures .item:nth-child(5) .VPFeature { animation-delay: 0.33s; }
+.VPFeatures .item:nth-child(6) .VPFeature { animation-delay: 0.4s; }
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--aufe-accent) 45%, var(--aufe-line)) !important;
+  box-shadow: 0 16px 36px rgba(26, 58, 74, 0.12);
+}
+
+.VPFeature .title {
+  color: var(--aufe-ink) !important;
+  font-size: 1.15rem !important;
+}
+
+.VPFeature .details {
+  line-height: 1.7 !important;
+}
+
+/* ---------- Home extra section ---------- */
+.aufe-home-extra {
+  max-width: 1152px;
+  margin: 2.5rem auto 4rem;
+  padding: 0 24px;
+}
+
+.aufe-panel {
+  border: 1px solid var(--aufe-line);
+  border-radius: 16px;
+  background: var(--vp-c-bg-elv);
+  box-shadow: var(--aufe-shadow);
+  padding: 1.5rem 1.6rem 1.7rem;
+  margin-bottom: 1.25rem;
+  animation: aufe-rise 0.8s ease both;
+}
+
+.aufe-panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--aufe-ink);
+  border: none;
+  padding: 0;
+}
+
+.aufe-panel p,
+.aufe-panel li {
+  color: var(--vp-c-text-2);
+  line-height: 1.8;
+}
+
+.aufe-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.aufe-step {
+  border-radius: 12px;
+  padding: 1rem 1.05rem;
+  background: color-mix(in srgb, var(--aufe-ink) 4%, transparent);
+  border: 1px solid var(--aufe-line);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.aufe-step:hover {
+  transform: translateY(-3px);
+  background: color-mix(in srgb, var(--aufe-accent-soft) 18%, transparent);
+}
+
+.aufe-step .num {
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--aufe-accent);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+.aufe-step h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--aufe-ink);
+  border: none;
+  padding: 0;
+}
+
+.aufe-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+
+.aufe-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--aufe-line);
+  color: var(--aufe-ink) !important;
+  text-decoration: none !important;
+  background: color-mix(in srgb, var(--vp-c-bg) 80%, white);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  font-size: 0.92rem;
+}
+
+.aufe-chip:hover {
+  transform: translateY(-2px);
+  border-color: var(--aufe-accent-soft);
+  background: color-mix(in srgb, var(--aufe-accent-soft) 22%, transparent);
+}
+
+@media (max-width: 860px) {
+  .aufe-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Nav / sidebar polish ---------- */
+.VPNavBar {
+  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--vp-c-bg) 86%, transparent) !important;
+}
+
+.VPNavBarTitle .title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.VPSidebarItem.level-0 > .item > .link > .text,
+.VPSidebarItem.is-active > .item .text {
+  font-weight: 700;
+}
+
+/* Reading progress bar */
+.aufe-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  z-index: 1000;
+  background: linear-gradient(90deg, var(--aufe-ink), var(--aufe-accent));
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* Doc page enter */
+.VPDoc .content-container {
+  animation: aufe-rise 0.45s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

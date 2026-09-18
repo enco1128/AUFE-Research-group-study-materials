@@ -1,6 +1,6 @@
 # Idea 与实验
 
-> 对应论文章节：**Experiments** · 仓库资源：[`resources/04-experiment/`](https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/04-experiment)
+> **AUFE课题组科研入门** · 对应论文章节：**Experiments** · 仓库资源：[`resources/04-experiment/`](https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/04-experiment)
 
 ## 本页目标
 
