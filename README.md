@@ -17,11 +17,11 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/enco1128/lab-onboarding.git
-cd lab-onboarding
+git clone https://github.com/enco1128/Research-group-study-materials.git
+cd Research-group-study-materials
 ```
 
-仓库主页：https://github.com/enco1128/lab-onboarding
+仓库主页：https://github.com/enco1128/Research-group-study-materials
 
 ### 2. 在 Overleaf 中编辑（推荐）
 
