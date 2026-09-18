@@ -1,0 +1,36 @@
+% Overleaf: Compiler = XeLaTeX
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!70!black,
+  citecolor=blue!60!black,
+  breaklinks=true
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 课题组科研入门手册}
+\fancyhead[R]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlist[itemize]{leftmargin=*,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=*,itemsep=2pt,topsep=4pt}
+
+\newcommand{\resurl}[1]{\url{#1}}
+\newcommand{\tipbox}[1]{%
+  \par\vspace{4pt}\noindent\textbf{要点：}#1\par\vspace{4pt}%
+}

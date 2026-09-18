@@ -1,0 +1,3 @@
+title,authors,citations,year,url,has_code,code_url,has_dataset,dataset_url,notes
+"Example: ResNet","He et al.",100000,2016,https://arxiv.org/abs/1512.03385,yes,https://github.com/pytorch/vision,yes,,backbone
+,,,,,,,
