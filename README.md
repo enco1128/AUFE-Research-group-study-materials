@@ -24,13 +24,10 @@ npm install
 npm run docs:dev
 ```
 
-浏览器打开本地提示的地址。有仓库权限时也可直接在 GitHub 浏览 [`docs/`](docs/) 下的 Markdown。
+浏览器打开本地提示的地址。也可直接在 GitHub 浏览 [`docs/`](docs/) 下的 Markdown。
 
-**关于 GitHub Pages：** 当前仓库为 **private**，个人免费账号无法为私有仓开启 Pages（Actions 构建已通过，部署会因套餐限制失败）。可选方案：
-
-1. 继续用 `npm run docs:dev` / 读 `docs/**/*.md`（推荐，适合组内私密资料）  
-2. 升级 GitHub Pro 后：Settings → Pages → Source = GitHub Actions（工作流 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 已就绪）  
-3. 若可公开：把仓库改为 public，再启用同一工作流即可访问 `https://enco1128.github.io/Research-group-study-materials/`
+**在线站点：** https://enco1128.github.io/Research-group-study-materials/  
+（由 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 自动构建；Settings → Pages → Source = GitHub Actions）
 
 ### 2. Overleaf 编辑手册
 
