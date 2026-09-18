@@ -26,7 +26,7 @@ npm run docs:dev
 
 浏览器打开本地提示的地址。也可直接在 GitHub 浏览 [`docs/`](docs/) 下的 Markdown。
 
-**在线站点：** https://enco1128.github.io/Research-group-study-materials/  
+**在线站点：** https://enco1128.github.io/Research-group-study-materials/
 （由 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 自动构建；Settings → Pages → Source = GitHub Actions）
 
 ### 2. Overleaf 编辑手册
