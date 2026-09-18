@@ -6,7 +6,7 @@
 
 | 入口 | 说明 |
 |------|------|
-| **学习网页** | [`docs/`](docs/)（VitePress，结构参考[智科全家桶](https://njuis-students.github.io/)） |
+| **学习网页** | [`docs/`](docs/)（VitePress）|
 | **Overleaf 手册** | [`latex/main.tex`](latex/main.tex) · XeLaTeX · 论文体例全流程 |
 | **分阶段资源** | [`resources/`](resources/) · 与网页/手册同编号 |
 | **个人模板** | [`templates/`](templates/) |
