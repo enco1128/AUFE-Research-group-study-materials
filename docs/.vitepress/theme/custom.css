@@ -1,0 +1,48 @@
+/**
+ * 英文：Times New Roman
+ * 中文：华文中宋（STZhongsong）
+ * 浏览器对拉丁字符优先匹配 Times New Roman，CJK 回退到华文中宋。
+ */
+:root {
+  --vp-font-family-base: 'Times New Roman', Times, '华文中宋', STZhongsong,
+    '华文中宋', 'Songti SC', SimSun, serif;
+  --vp-font-family-mono: 'Times New Roman', Times, '华文中宋', STZhongsong,
+    ui-monospace, monospace;
+}
+
+html,
+body,
+.VPDoc,
+.VPNav,
+.VPSidebar,
+.VPFooter,
+.vp-doc,
+.VPHero,
+.VPFeature,
+.VPLocalNav,
+.VPDocAsideOutline {
+  font-family: var(--vp-font-family-base) !important;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline,
+.VPFeature .title,
+.VPFeature .details,
+.VPNavBarTitle,
+.VPSidebarItem .text {
+  font-family: var(--vp-font-family-base) !important;
+}
+
+/* 代码块仍尽量等宽，但中文注释同样走中宋 */
+.vp-doc code,
+.vp-doc pre,
+.vp-code {
+  font-family: Consolas, 'Courier New', '华文中宋', STZhongsong, monospace !important;
+}
