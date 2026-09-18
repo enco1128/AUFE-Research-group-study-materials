@@ -28,6 +28,8 @@ npm run docs:dev
 
 若已开启 GitHub Pages：`https://enco1128.github.io/Research-group-study-materials/`（私有仓需账号有权限）。
 
+启用 Pages：仓库 **Settings → Pages → Source = GitHub Actions**；本地已有工作流文件 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)，若尚未出现在远程，请先执行 `gh auth refresh -s workflow` 后将该文件推送。
+
 ### 2. Overleaf 编辑手册
 
 1. Overleaf → **Import from GitHub** → 选本仓库  
