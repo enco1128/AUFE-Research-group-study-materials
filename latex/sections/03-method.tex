@@ -1,0 +1,14 @@
+﻿\section{Method：代码与工程基础}
+\label{sec:method}
+
+\webref{docs/3-代码/}
+\resref{resources/03-coding/}
+
+\subsection{框架入门}
+本组默认推荐 PyTorch。应从官方 60 分钟教程入手，辅以中文解读与《动手学深度学习》视频，路径为：官方示例 $\rightarrow$ 复现小模型 $\rightarrow$ 阅读领域经典开源实现。外链索引见附录与 \path{resources/03-coding/README.md}。
+
+\subsection{工程结构}
+可读、可复现的训练仓库通常包含：\texttt{config/}、\texttt{dataset}/\texttt{dataloader}、\texttt{models/}、\texttt{metrics/}、\texttt{utils/}、\texttt{scripts/}、\texttt{weights/} 以及 \texttt{train.py} 主入口。寻找论文代码可依：文内链接、GitHub 项目名、Papers with Code、必要时联系作者。工业界代码更新快，医学专用代码更贴场景但维护与数据公开性可能较弱，建议各精读一份。
+
+\subsection{AI 辅助与调试}
+Claude Code 等工具适合生成样板、解释报错与浏览陌生仓库，但不能替代对方法与实验的理解，输出必须人工核对。调试时每次尽量只改变一个变量，保存随机种子与配置；困难时可按数据质量、预处理、增强、结构、超参、预训练/迁移的顺序排查。

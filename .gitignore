@@ -1,4 +1,4 @@
-# Ignore LaTeX build artifacts
+# LaTeX
 *.aux
 *.bbl
 *.blg
@@ -10,7 +10,12 @@
 *.toc
 *.xdv
 *.pdf
-!assets/**/*.pdf
+!resources/**/*.pdf
+
+# Node / VitePress
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
 
 # OS / editor
 .DS_Store

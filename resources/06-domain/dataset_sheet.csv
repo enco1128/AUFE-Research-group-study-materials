@@ -1,0 +1,3 @@
+name,year_source,modality,num_samples,annotation_type,tasks,public_or_private,license,download_url,notes
+"Example: CVC-ClinicDB","CMIG 2015",endoscopy,612,segmentation_mask,"detection,segmentation",public,,,"polyp benchmark"
+,,,,,,,

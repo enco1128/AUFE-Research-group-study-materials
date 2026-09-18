@@ -1,30 +1,32 @@
 % !TeX program = xelatex
-% Overleaf: Menu → Compiler → XeLaTeX；主文件设为 latex/main.tex
+% Overleaf: Menu → Compiler → XeLaTeX；主文件 latex/main.tex
 \documentclass[UTF8,a4paper,11pt,fontset=fandol]{ctexart}
 \input{preamble}
 
-\title{\textbf{课题组科研入门手册}\\[0.6em]
-\large 深度学习 · 计算机视觉 · 医学影像 AI}
-\author{组内学习资料整理版}
+\title{\textbf{课题组科研入门：从文献到投稿的全流程指南}\\[0.4em]
+\large A Practical Onboarding Guide for Deep Learning Research}
+\author{课题组学习资料整理版}
 \date{\today}
 
 \begin{document}
 \maketitle
+
 \begin{abstract}
 \noindent
-本手册面向新加入课题组的本科生与研究生，整合组内既有学习笔记、学长经验分享、学术交流纪要与工具链接，形成可在 Overleaf 协作编辑、并在 GitHub 按路径自学的入门材料。阅读建议：先看第~1~章与仓库 \texttt{README} 中的周计划，再按章节推进；链接与模板以仓库最新版本为准。
+本文面向新加入课题组的本科生与研究生，将科研入门整理为与学术论文同构的叙述结构：Introduction（动机与规范）、Related Work（文献方法）、Method（代码与工程）、Experiments（Idea 与实验）、Writing（写作与投稿）、Case Study（医学影像 AI 问题拆解）与 Conclusion（八周路线）。正文与 GitHub 仓库中的 VitePress 学习网页 \texttt{docs/}、分阶段资源目录 \texttt{resources/} 编号一一对应，可在 Overleaf 协作编辑并导出 PDF。关键词：科研入门；文献综述；深度学习工程；实验设计；学术写作；医学影像。
 \end{abstract}
 
 \tableofcontents
 \newpage
 
-\input{chapters/01-welcome}
-\input{chapters/02-mindset}
-\input{chapters/03-literature}
-\input{chapters/04-coding}
-\input{chapters/05-idea-experiment}
-\input{chapters/06-writing-tools}
-\input{chapters/07-domain}
-\input{chapters/08-resources}
+\input{sections/01-intro}
+\input{sections/02-related}
+\input{sections/03-method}
+\input{sections/04-experiments}
+\input{sections/05-writing}
+\input{sections/06-case}
+\input{sections/07-conclusion}
+\appendix
+\input{sections/A-appendix}
 
 \end{document}
