@@ -1,6 +1,6 @@
 # 01 · 心态与规范
 
-本目录对应网页 [导论](https://github.com/enco1128/Research-group-study-materials/tree/main/docs/1-导论) 与手册 **Introduction**。
+本目录对应网页 [导论](https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/docs/1-导论) 与手册 **Introduction**。
 
 建议配合：
 

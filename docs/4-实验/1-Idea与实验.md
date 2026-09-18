@@ -1,6 +1,6 @@
 # Idea 与实验
 
-> 对应论文章节：**Experiments** · 仓库资源：[`resources/04-experiment/`](https://github.com/enco1128/Research-group-study-materials/tree/main/resources/04-experiment)
+> 对应论文章节：**Experiments** · 仓库资源：[`resources/04-experiment/`](https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/04-experiment)
 
 ## 本页目标
 
@@ -39,7 +39,7 @@
 
 ## 经典精读清单
 
-见 [`classic_models.md`](https://github.com/enco1128/Research-group-study-materials/blob/main/resources/04-experiment/classic_models.md)  
+见 [`classic_models.md`](https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/04-experiment/classic_models.md)  
 配合 [李沐论文精读](https://github.com/mli/paper-reading)：ResNet → Transformer → GAN → 对比学习 → Swin → CLIP → …
 
 ## Checklist

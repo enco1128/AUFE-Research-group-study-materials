@@ -6,7 +6,7 @@ const vitePressOptions = {
   title: '课题组科研入门',
   description: '深度学习 / 计算机视觉 / 医学影像 AI 科研全流程入门',
   lastUpdated: true,
-  base: '/Research-group-study-materials/',
+  base: '/AUFE-Research-group-study-materials/',
   themeConfig: {
     search: { provider: 'local' },
     nav: [
@@ -16,13 +16,13 @@ const vitePressOptions = {
       { text: '附录', link: '/8-附录/1-资源索引' },
       {
         text: '仓库',
-        link: 'https://github.com/enco1128/Research-group-study-materials'
+        link: 'https://github.com/enco1128/AUFE-Research-group-study-materials'
       }
     ],
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/enco1128/Research-group-study-materials'
+        link: 'https://github.com/enco1128/AUFE-Research-group-study-materials'
       }
     ],
     outline: { level: [2, 3], label: '本页目录' },
