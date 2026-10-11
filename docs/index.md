@@ -4,7 +4,7 @@ layout: home
 hero:
   name: AUFE课题组科研入门
   text: 从文献到投稿的全流程指南
-  tagline: 深度学习 · 计算机视觉 · 医学影像 AI · 网页 / Overleaf / 仓库三端对齐
+  tagline: 深度学习 · 计算机视觉 · 医学影像 AI · 16 篇手册已拆入站点 · 网页 / Overleaf / 仓库三端对齐
   actions:
     - theme: brand
       text: 开始导论
@@ -18,19 +18,19 @@ hero:
 
 features:
   - title: 导论与心态
-    details: 为何做科研、三个一定、常见误区、选题与拒稿心态
+    details: 研究定义、TPIC 主线、三个一定、八习惯、高效 Meeting
     link: /1-导论/1-为何做科研
   - title: 文献检索与精读
-    details: 渠道、筛选、文献 list、泛读到精读、汇报 checklist
+    details: 六条检索路径、七步法、文献 list、学术汇报追问
     link: /2-文献/1-文献检索与精读
   - title: 代码与工程
     details: PyTorch 入门、仓库目录规范、找代码、AI 辅助与调试
     link: /3-代码/1-代码与工程基础
   - title: Idea 与实验
-    details: Idea-driven / Goal-driven、简单实验、经典模型精读
+    details: 找问题五路径、Problem/Method-driven、简单实验
     link: /4-实验/1-Idea与实验
   - title: 写作与投稿
-    details: 论证式写作、工具链、周报节奏、会议截止
+    details: 章节写法、画图指南、工具链、Rebuttal
     link: /5-写作/1-写作工具与投稿
   - title: 课题范式与路线
     details: 医学影像 AI 问题拆解 + 可执行八周路径
@@ -46,12 +46,12 @@ features:
     <div class="aufe-step">
       <div class="num">01</div>
       <h3>建立预期</h3>
-      <p>先读导论：科研与上课的差别、「三个一定」、常见误区。</p>
+      <p>先读导论：研究定义、TPIC 主线、「三个一定」、Meeting 与习惯。</p>
     </div>
     <div class="aufe-step">
       <div class="num">02</div>
       <h3>练核心技能</h3>
-      <p>文献 → 代码 → 实验 → 写作，四章按序推进，每章都有 checklist。</p>
+      <p>文献（六路径+七步法）→ 代码 → Idea/实验 → 写作（含画图与 Rebuttal）。</p>
     </div>
     <div class="aufe-step">
       <div class="num">03</div>
@@ -69,6 +69,7 @@ features:
     <a class="aufe-chip" href="https://github.com/enco1128/AUFE-Research-group-study-materials">GitHub 仓库</a>
     <a class="aufe-chip" href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/latex/main.tex">Overleaf / LaTeX 手册</a>
     <a class="aufe-chip" href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources">resources 资源</a>
+    <a class="aufe-chip" href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/handbook">培训手册原文</a>
     <a class="aufe-chip" href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/templates/learning_plan.md">学习计划模板</a>
     <a class="aufe-chip" href="https://enco1128.github.io/AUFE-Research-group-study-materials/8-附录/1-资源索引">外链附录</a>
   </div>

@@ -1,8 +1,7 @@
-# 外链镜像说明
+# 08 · 外链与手册
 
-完整外链总表以网页为准：
+网页附录为外链主入口：[资源索引](../../docs/8-附录/1-资源索引.md)。
 
-- 仓库内 Markdown：[`docs/8-附录/1-资源索引.md`](../../docs/8-附录/1-资源索引.md)
-- Overleaf 手册：Appendix
+完整培训手册原文（docx / pptx）：[`../handbook/`](../handbook/)。
 
-本目录用于存放日后新增的离线清单或组内私有链接说明（勿提交账号密码）。
+外部 Rebuttal 资料：[MLNLP Paper-Rebuttal-Tips](https://github.com/MLNLP-World/Paper-Rebuttal-Tips)。

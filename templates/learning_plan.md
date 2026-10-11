@@ -28,3 +28,11 @@
 - 论文笔记（方法 / 贡献 / 未解决问题 / 启发）
 - 实验记录（若有）
 - 组会待办跟进
+- 对照 [`resources/01-mindset/habits_checklist.md`](../resources/01-mindset/habits_checklist.md) 打卡
+
+## 建议加读（手册已拆入站点）
+
+- Week 1：[`docs/1-导论/3-研究过程与能力.md`](../docs/1-导论/3-研究过程与能力.md)
+- Week 3：[`docs/1-导论/4-高效Meeting.md`](../docs/1-导论/4-高效Meeting.md) + Meeting 模版
+- Week 7：[`docs/2-文献/2-学术汇报.md`](../docs/2-文献/2-学术汇报.md)
+- Week 8：[`docs/5-写作/2-论文结构与章节写法.md`](../docs/5-写作/2-论文结构与章节写法.md)（需要案例配图时打开 `resources/handbook/`）

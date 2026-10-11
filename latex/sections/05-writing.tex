@@ -1,11 +1,20 @@
-﻿\section{Writing：学术写作、工具与投稿}
+﻿\section{Writing：学术写作、画图、投稿与 Rebuttal}
 \label{sec:writing}
 
 \webref{docs/5-写作/}
-\resref{resources/05-writing/}
+\resref{resources/05-writing/；手册原文 resources/handbook/}
 
-\subsection{写作原则}
-论文写作本质是有逻辑的论证：证明问题重要、方法合理、证据充分。应恪守学术诚信；句式可模仿优秀论文，难点在贡献叙事与逻辑链条。收尾标准是问题、方法、关键实验与结论是否站得住，而非无限完美主义。
+\subsection{写论文之前}
+先对齐署名与贡献、目标 venue（摘要/全文截止），并用「八句话故事线」写清：背景、已有方法、结构性缺口、本文一句话思想、方法如何对准问题、实验设置、可量化结论、贡献列表。投稿前自问：解决了什么重要问题？证据是否撑得住 claim？
 
-\subsection{工具链}
+\subsection{章节写法要点}
+Abstract 建议遵循五句话原则：Context、结构性 Problem、Methodology、可量化且与问题闭环的 Results（见 \path{resources/05-writing/abstract\_five\_sentences.md}）。Introduction 采用建立领域--回顾已有--指出 gap--引出本文的四段逻辑，并可展开为背景/已有/缺口/方法/贡献/结构（骨架见 \path{resources/05-writing/intro\_skeleton.md}）。Related Works 按方向或方法分类定位，避免流水账。Methods 采用总分：Overview、Problem Formulation、可解释公式、按模块细节、可选伪代码、写清 novelty。Experiments 常用 Setup、Main Results、Ablation、Analysis、Case/Visualization 等结构，结论须服务核心 claim。参考文献逐条核对（\path{resources/05-writing/reference\_checklist.md}）。网页详见 \texttt{docs/5-写作/2-论文结构与章节写法.md}。
+
+\subsection{论文画图}
+主图分三类：动机图（Teaser）、方法流程图、结果图表；另可用 Related 对比表/图。动机图常见套路包括现有 vs 本文、形象对比、例子驱动、方法概览。全篇统一色板，注意色盲与灰度打印；方法图模块名与正文一致；主结果表突出本文。工具与 tips 见 \path{resources/05-writing/figure\_tips.md}；完整案例配图见 \path{resources/handbook/}。
+
+\subsection{工具链与周报}
 推荐 Overleaf 协作本手册、Zotero 管理文献、draw.io/Visio/PPT/Illustrator 制图、Weights \& Biases 与 Hugging Face 支持训练与社区资源，DeepL/Grammarly 辅助语言（仍须人工把关）。Paper Copilot 等 AI 读论文工具可用于快速扫文，但结论与引用必须核对。会议截止时间可关注 \url{https://ccfddl.top/}。周报模板与范例见 \path{resources/05-writing/}。
+
+\subsection{Rebuttal}
+原则：有问必答不漏点；统筹篇幅争取可团结意见；发现 factual error 礼貌指出并可提示 AC；句式模板见 \path{resources/05-writing/rebuttal\_templates.md}。外部资料可参考 \url{https://github.com/MLNLP-World/Paper-Rebuttal-Tips}。网页见 \texttt{docs/5-写作/4-Rebuttal指南.md}。

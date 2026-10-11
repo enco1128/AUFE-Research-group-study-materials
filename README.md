@@ -121,14 +121,14 @@ npm run docs:dev
     <tr>
       <td align="center">01</td>
       <td align="center">Introduction</td>
-      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/1-为何做科研">为何做科研</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/2-心态误区与规范">心态与规范</a></td>
+      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/1-为何做科研">为何做科研</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/3-研究过程与能力">研究过程</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/2-心态误区与规范">心态</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/1-导论/4-高效Meeting">Meeting</a></td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/docs/1-导论">docs/1-导论</a></td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/01-mindset">resources/01-mindset</a></td>
     </tr>
     <tr>
       <td align="center">02</td>
       <td align="center">Related Work</td>
-      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/2-文献/1-文献检索与精读">文献检索与精读</a></td>
+      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/2-文献/1-文献检索与精读">文献检索与精读</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/2-文献/2-学术汇报">学术汇报</a></td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/docs/2-文献">docs/2-文献</a></td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/02-literature">resources/02-literature</a></td>
     </tr>
@@ -149,9 +149,9 @@ npm run docs:dev
     <tr>
       <td align="center">05</td>
       <td align="center">Writing</td>
-      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/5-写作/1-写作工具与投稿">写作工具与投稿</a></td>
+      <td align="center"><a href="https://enco1128.github.io/AUFE-Research-group-study-materials/5-写作/1-写作工具与投稿">写作工具</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/5-写作/2-论文结构与章节写法">章节写法</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/5-写作/3-论文画图指南">画图</a> · <a href="https://enco1128.github.io/AUFE-Research-group-study-materials/5-写作/4-Rebuttal指南">Rebuttal</a></td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/docs/5-写作">docs/5-写作</a></td>
-      <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/05-writing">resources/05-writing</a></td>
+      <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/05-writing">resources/05-writing</a> · <a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/handbook">handbook</a></td>
     </tr>
     <tr>
       <td align="center">06</td>
@@ -249,6 +249,7 @@ AUFE-Research-group-study-materials/
 │   ├── main.tex
 │   └── sections/              # 与 docs 同序的章节
 ├── resources/                 # 模板、范例、PDF、附图（与章节编号对齐）
+│   └── handbook/              # 《如何做科研与写论文》docx / pptx 原文
 ├── assets/                    # README 插图（架构图等）
 ├── templates/                 # 个人学习计划等通用模板
 ├── .github/workflows/         # GitHub Pages 自动部署
@@ -279,6 +280,14 @@ AUFE-Research-group-study-materials/
     <tr>
       <td align="center">周报模板 / 范例</td>
       <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/05-writing/weekly_report.md">weekly_report.md</a> · <a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/05-writing/weekly_report_example.md">example</a></td>
+    </tr>
+    <tr>
+      <td align="center">培训手册原文（16 篇）</td>
+      <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/tree/main/resources/handbook">resources/handbook</a></td>
+    </tr>
+    <tr>
+      <td align="center">Meeting / 汇报 / Abstract 模板</td>
+      <td align="center"><a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/01-mindset/meeting_template.md">meeting_template</a> · <a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/02-literature/report_questions.md">report_questions</a> · <a href="https://github.com/enco1128/AUFE-Research-group-study-materials/blob/main/resources/05-writing/abstract_five_sentences.md">abstract_five_sentences</a></td>
     </tr>
     <tr>
       <td align="center">数据集整理表</td>
