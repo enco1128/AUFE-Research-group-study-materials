@@ -134,33 +134,103 @@ body,
   font-family: var(--vp-font-family-mono) !important;
 }
 
-/* ---------- Home hero ---------- */
+/* ---------- Home hero + parallax ---------- */
 .VPHome {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
+  isolation: isolate;
 }
 
 .VPHome::before {
-  content: '';
-  position: absolute;
-  inset: -20% -10% auto;
-  height: 55vh;
-  background:
-    radial-gradient(ellipse at 20% 30%, rgba(196, 165, 116, 0.18), transparent 55%),
-    radial-gradient(ellipse at 80% 10%, rgba(26, 58, 74, 0.1), transparent 50%);
-  pointer-events: none;
-  animation: aufe-glow 12s ease-in-out infinite alternate;
-  z-index: 0;
+  content: none;
 }
 
-.VPHome > * {
+.aufe-parallax {
+  position: absolute;
+  inset: -12% -8% -20%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.aufe-parallax__layer,
+.aufe-parallax__grain {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.aufe-parallax__layer--far {
+  background:
+    radial-gradient(ellipse 55% 40% at 18% 22%, rgba(196, 165, 116, 0.22), transparent 60%),
+    radial-gradient(ellipse 45% 35% at 82% 8%, rgba(26, 58, 74, 0.12), transparent 58%),
+    radial-gradient(ellipse 40% 30% at 70% 70%, rgba(44, 83, 100, 0.08), transparent 65%);
+}
+
+.aufe-parallax__layer--mid {
+  background:
+    radial-gradient(circle 28vmin at 12% 68%, rgba(139, 105, 20, 0.1), transparent 70%),
+    radial-gradient(circle 34vmin at 88% 42%, rgba(26, 58, 74, 0.09), transparent 72%),
+    linear-gradient(160deg, transparent 40%, rgba(239, 232, 220, 0.35) 100%);
+  opacity: 0.95;
+}
+
+.aufe-parallax__layer--near {
+  background:
+    radial-gradient(circle 12vmin at 30% 18%, rgba(255, 252, 247, 0.55), transparent 70%),
+    radial-gradient(circle 10vmin at 74% 28%, rgba(196, 165, 116, 0.16), transparent 68%),
+    repeating-linear-gradient(
+      -12deg,
+      transparent 0 18px,
+      rgba(26, 58, 74, 0.015) 18px 19px
+    );
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+
+.aufe-parallax__grain {
+  background-image:
+    radial-gradient(rgba(26, 58, 74, 0.04) 0.6px, transparent 0.7px);
+  background-size: 3px 3px;
+  opacity: 0.35;
+  mix-blend-mode: soft-light;
+}
+
+.dark .aufe-parallax__layer--far {
+  background:
+    radial-gradient(ellipse 55% 40% at 18% 22%, rgba(212, 180, 131, 0.14), transparent 60%),
+    radial-gradient(ellipse 45% 35% at 82% 8%, rgba(155, 184, 198, 0.1), transparent 58%),
+    radial-gradient(ellipse 40% 30% at 70% 70%, rgba(44, 83, 100, 0.16), transparent 65%);
+}
+
+.dark .aufe-parallax__layer--near {
+  mix-blend-mode: screen;
+  opacity: 0.35;
+}
+
+.VPHome > *:not(.aufe-parallax) {
   position: relative;
   z-index: 1;
 }
 
+.aufe-home--parallax .VPHero .name,
+.aufe-home--parallax .VPHero .text,
+.aufe-home--parallax .VPHero .tagline,
+.aufe-home--parallax .VPHero .actions,
+.aufe-home--parallax .VPFeature,
+.aufe-home--parallax .aufe-panel,
+.aufe-home--parallax .aufe-step {
+  --aufe-tx: 0px;
+  --aufe-ty: 0px;
+  --aufe-rot: 0deg;
+  will-change: transform;
+  transform: translate3d(var(--aufe-tx), var(--aufe-ty), 0) rotate(var(--aufe-rot));
+}
+
 @keyframes aufe-glow {
-  from { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
-  to { transform: translate3d(2%, 3%, 0) scale(1.05); opacity: 1; }
+  from { opacity: 0.85; }
+  to { opacity: 1; }
 }
 
 .VPHero {
@@ -221,7 +291,7 @@ body,
   border: 1px solid var(--aufe-line) !important;
   background: color-mix(in srgb, var(--vp-c-bg-elv) 92%, var(--aufe-accent-soft)) !important;
   box-shadow: var(--aufe-shadow);
-  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  transition: box-shadow 0.28s ease, border-color 0.28s ease;
   animation: aufe-rise 0.7s ease both;
 }
 
@@ -233,9 +303,20 @@ body,
 .VPFeatures .item:nth-child(6) .VPFeature { animation-delay: 0.4s; }
 
 .VPFeature:hover {
-  transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--aufe-accent) 45%, var(--aufe-line)) !important;
   box-shadow: 0 16px 36px rgba(26, 58, 74, 0.12);
+}
+
+.aufe-home--parallax .VPFeature:hover {
+  transform: translate3d(var(--aufe-tx), calc(var(--aufe-ty) - 4px), 0) rotate(var(--aufe-rot));
+}
+
+.VPHome:not(.aufe-home--parallax) .VPFeature {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.VPHome:not(.aufe-home--parallax) .VPFeature:hover {
+  transform: translateY(-4px);
 }
 
 .VPFeature .title {
@@ -290,12 +371,28 @@ body,
   padding: 1rem 1.05rem;
   background: color-mix(in srgb, var(--aufe-ink) 4%, transparent);
   border: 1px solid var(--aufe-line);
-  transition: transform 0.25s ease, background 0.25s ease;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
 .aufe-step:hover {
-  transform: translateY(-3px);
   background: color-mix(in srgb, var(--aufe-accent-soft) 18%, transparent);
+}
+
+.aufe-home--parallax .aufe-step:hover {
+  transform: translate3d(var(--aufe-tx), calc(var(--aufe-ty) - 3px), 0) rotate(var(--aufe-rot));
+}
+
+.VPHome:not(.aufe-home--parallax) .aufe-step {
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.VPHome:not(.aufe-home--parallax) .aufe-step:hover {
+  transform: translateY(-3px);
+}
+
+.aufe-home--parallax .aufe-panel {
+  backdrop-filter: blur(2px);
+  background: color-mix(in srgb, var(--vp-c-bg-elv) 88%, transparent);
 }
 
 .aufe-step .num {
@@ -387,5 +484,16 @@ body,
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  .aufe-parallax,
+  .aufe-home--parallax .VPHero .name,
+  .aufe-home--parallax .VPHero .text,
+  .aufe-home--parallax .VPHero .tagline,
+  .aufe-home--parallax .VPHero .actions,
+  .aufe-home--parallax .VPFeature,
+  .aufe-home--parallax .aufe-panel,
+  .aufe-home--parallax .aufe-step {
+    transform: none !important;
   }
 }
